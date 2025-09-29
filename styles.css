@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header {
+    background-color: #131313;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+    color: #2363a0;
+}
+
+#banner {
+    background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2016/09/Burt-Ward-and-Adam-West-in-Batman.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: aliceblue;
+    font-size: 19px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    width: 90%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #2363a0;
+    color: aliceblue;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.button:hover {
+    background-color: aliceblue;
+    color: #2363a0;
+}
+
+.actors-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.banner-1 {
+    background-image: url("https://i.pinimg.com/736x/c2/e1/8b/c2e18b6fe3cc8c1c034cd5679fd99e60.jpg");
+}
+
+.banner-2 {
+    background-image: url("https://cdn.pipocamoderna.com.br/wp-content/uploads/2019/07/burt_ward-robin-batman-1966.jpg");
+}
+
+.banner-3 {
+    background-image: url("https://i.pinimg.com/236x/e1/14/91/e114912566f40394df1f9fdbf20ee021.jpg");
+}
+
+.banner-4 {
+    background-image: url("https://br.web.img2.acsta.net/r_1920_1080/pictures/16/02/08/11/04/519887.jpg");
+}
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: white;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: -250px;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+}
+
+/* ------------------------------ */
+/* Formulário de Contato         */
+/* ------------------------------ */
+
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Faz a seção ocupar toda a tela */
+    padding: 60px 20px;
+}
+
+.contact-container {
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #1b1b1b;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    color: #1b1b1b;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    width: 200px;
+    height: 60px;
+    background-color: #2363a0;
+    color: aliceblue;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.contact-form button:hover {
+    background-color: #1b1b1b;
+    color: #2363a0;
+}
+
+/* ------------------------------ */
+/* Comentários                    */
+/* ------------------------------ */
+
+.comments-section {
+    max-width: 700px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.comment img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #2363a0;
+}
+
+.comment-content {
+    background-color: #2b2b2b;
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.comment-content strong {
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.comment-content p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ------------------------------ */
+/* Galeria de fotos               */
+/* ------------------------------ */
+
+.galeria-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
